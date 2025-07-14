@@ -1,0 +1,412 @@
+/* General Styles */
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f8f8;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.8em;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #2c3e50;
+}
+
+/* Header */
+header {
+    background: #2c3e50;
+    color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8em;
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 30px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #4CAF50;
+}
+
+/* Hero Section */
+.hero {
+    background: #34495e url('https://via.placeholder.com/1500x600?text=AI+Personal+Trainer') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+}
+
+.hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content h2 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+    color: #eee;
+}
+
+.btn {
+    display: inline-block;
+    color: #fff;
+    background: #4CAF50;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #388E3C;
+}
+
+/* About Section */
+.about {
+    padding: 60px 0;
+    background: #fff;
+}
+
+.about p {
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    font-size: 1.1em;
+    color: #666;
+}
+
+/* Features Section */
+.features {
+    padding: 60px 0;
+    background: #ecf0f1;
+    text-align: center;
+}
+
+.features .feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.features .feature-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.features .feature-item h3 {
+    color: #4CAF50;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+/* Benefits Section */
+.benefits {
+    padding: 60px 0;
+    background: #fff;
+}
+
+.benefits h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+}
+
+.benefits ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.benefits ul li {
+    background: #e8f5e9;
+    padding: 15px;
+    border-left: #4CAF50 5px solid;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.benefits ul li .icon {
+    font-size: 1.5em;
+    margin-right: 10px;
+    color: #4CAF50;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 60px 0;
+    background: #ecf0f1;
+    text-align: center;
+}
+
+.testimonial-item {
+    background: #fff;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.testimonial-item .author {
+    font-style: italic;
+    margin-top: 10px;
+    color: #555;
+}
+
+/* Pricing Section */
+.pricing {
+    padding: 60px 0;
+    background: #fff;
+    text-align: center;
+}
+
+.price-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.price-item {
+    background: #fdfdfd;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    border: 1px solid #ddd;
+    transition: transform 0.3s ease;
+}
+
+.price-item:hover {
+    transform: translateY(-5px);
+}
+
+.price-item.featured {
+    border: 2px solid #4CAF50;
+    box-shadow: 0 4px 15px rgba(76,175,80,0.2);
+}
+
+.price-item h3 {
+    color: #4CAF50;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.price-item .price {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.price-item .price span {
+    font-size: 0.6em;
+    font-weight: normal;
+}
+
+.price-item ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.price-item ul li {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.price-item .btn {
+    background: #4CAF50;
+}
+
+.price-item.featured .btn {
+    background: #FF9800;
+}
+
+.price-item.featured .btn:hover {
+    background: #FB8C00;
+}
+
+.pricing .note {
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #777;
+}
+
+/* Contact Section */
+.contact {
+    padding: 60px 0;
+    background: #ecf0f1;
+    text-align: center;
+}
+
+.contact p {
+    margin-bottom: 30px;
+    font-size: 1.1em;
+}
+
+.contact .download-buttons {
+    margin-bottom: 30px;
+}
+
+.contact .app-store-btn,
+.contact .google-play-btn {
+    display: inline-block;
+    background: #2c3e50;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin: 0 10px;
+    transition: background 0.3s ease;
+}
+
+.contact .app-store-btn:hover,
+.contact .google-play-btn:hover {
+    background: #34495e;
+}
+
+.contact .or {
+    margin: 20px 0;
+    font-weight: bold;
+    color: #555;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.contact button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background: #4CAF50;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background 0.3s ease;
+}
+
+.contact button:hover {
+    background: #388E3C;
+}
+
+/* Footer */
+footer {
+    background: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin: 0 15px;
+    }
+
+    .hero-content h2 {
+        font-size: 2.5em;
+    }
+
+    .hero-content p {
+        font-size: 1.1em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    .features .feature-grid,
+    .benefits ul,
+    .price-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact .app-store-btn,
+    .contact .google-play-btn {
+        display: block;
+        margin: 10px auto;
+    }
+}
