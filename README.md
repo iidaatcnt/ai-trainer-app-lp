@@ -1,3 +1,39 @@
+# AI Personal Trainer App Landing Page
+
+This is a landing page for an AI-powered personal training application.
+
+## Overview
+
+This landing page promotes "AI Trainer Pro," an application that automatically generates optimal exercise routines and meal plans based on the user's goals, fitness level, and lifestyle. It aims to provide an efficient and effective fitness experience, helping users achieve a healthy body and confidence.
+
+## Features
+
+-   **AI-Powered Personalized Plans:** AI automatically creates optimal exercise routines and meal plans based on your data.
+-   **Progress Tracking:** Records exercise and meal data, and AI visualizes and analyzes your progress.
+-   **Extensive Exercise Library:** Provides video-guided exercises to help you learn proper form.
+-   **Meal Management Support:** Offers nutritionally balanced recipe suggestions and calorie calculation support.
+-   **Goal Setting & Management:** Helps you set and achieve specific goals such as weight, body fat percentage, and muscle mass.
+-   **Motivation Features:** Includes badges for achievements and encouraging messages from trainers to keep you motivated.
+-   **Testimonials:** Features feedback from satisfied users to build trust and credibility.
+-   **Pricing Plans:** Presents different pricing options to cater to various needs.
+
+## Technologies Used
+
+-   HTML
+-   CSS
+-   JavaScript
+
+## How to View Locally
+
+1.  Clone this repository to your local machine.
+2.  Open the `index.html` file in your web browser.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+
+---
+
 # AIパーソナルトレーナーアプリ - ランディングページ
 
 このプロジェクトは、AIが最適な運動メニューと食事プランを自動生成するパーソナルトレーニングアプリのランディングページです。
